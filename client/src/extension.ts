@@ -207,7 +207,6 @@ export async function activate(context: ExtensionContext) {
           `-Dlucee.lsp.port=${lspPort}`,
           `-Dlucee.server.port=${serverPort}`,
           /* Added support for Windows */
-          // `-Dlucee.server.wardir=/tmp`,
           `-Dlucee.server.wardir=${os.tmpdir()}`,
           "-jar",
           lspjar,

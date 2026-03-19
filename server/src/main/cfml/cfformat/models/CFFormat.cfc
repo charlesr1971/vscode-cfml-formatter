@@ -265,7 +265,6 @@ component accessors="true" {
     }
 
     function cftokensFile(cmd, fullFilePath) {
-        // var p = createObject('java', 'java.lang.ProcessBuilder').init([executable, cmd, fullFilePath]).start();
         /* Added support for Windows */
         var p = createObject('java', 'java.lang.ProcessBuilder')
         .init([executable, cmd, fullFilePath])
